@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1a788615-200f-434a-bda4-c02c7d03a842" name="Changes" comment="commit second" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="REBUILD_ON_DEPENDENCY_CHANGE" value="false" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/eureka">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/gateway-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/simClient">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/simService1">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/simService2">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/gateway-service">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/simService1">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/simService1" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2kkETJSHEBiZbSLqPU97cqBz4QQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build eureka.executor": "Run",
+    "Gradle.Build gateway-service.executor": "Run",
+    "Gradle.Build simClient.executor": "Run",
+    "Gradle.Build simService1.executor": "Run",
+    "Gradle.Build simService2.executor": "Run",
+    "Gradle.GatewayServiceApplicationTests.executor": "Run",
+    "Gradle.gateway-service [:bug.creator.gatewayservice.Filter.CustomGatewayFilter.main()].executor": "Run",
+    "Gradle.gateway-service [bootRun].executor": "Run",
+    "Gradle.gateway-service [buildDependents].executor": "Run",
+    "Gradle.gateway-service [build].executor": "Run",
+    "Gradle.gateway-service [clean].executor": "Run",
+    "Gradle.simClient [:bug.creator.simclient.Service.AESService.main()].executor": "Run",
+    "Gradle.simService1 [:bug.creator.simservice1.Service.AESService.main()].executor": "Run",
+    "Gradle.simService1 [build].executor": "Run",
+    "Gradle.simService1 [clean].executor": "Run",
+    "HTTP Request.GatewayServiceApplication | #1.executor": "Run",
+    "HTTP Request.GatewayServiceApplication | #2.executor": "Run",
+    "HTTP Request.GatewayServiceApplication | #3.executor": "Run",
+    "HTTP Request.GatewayServiceApplication | #4.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.EurekaApplication.executor": "Run",
+    "Spring Boot.GatewayServiceApplication.executor": "Run",
+    "Spring Boot.SimClientApplication.executor": "Run",
+    "Spring Boot.SimService1Application.executor": "Run",
+    "Spring Boot.SimService2Application.executor": "Run",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/dinhtuananh/IdeaProjects/gateway/simClient/src/main/java/bug/creator/simclient",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.build.tools.auto.reload": "SELECTIVE",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/simClient/src/main/java/bug/creator/simclient" />
+      <recent name="$PROJECT_DIR$/gateway-service/src/main/java/bug/creator/gatewayservice/DTO" />
+      <recent name="$PROJECT_DIR$/gateway-service/src/main/java/bug/creator/gatewayservice" />
+      <recent name="$PROJECT_DIR$/simService1/src/main/java/bug/creator/simservice1" />
+      <recent name="$PROJECT_DIR$/simService2/src/main/java/bug/creator/simservice2" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="bug.creator.simservice1.DTO" />
+      <recent name="bug.creator.simservice1.Entity" />
+      <recent name="bug.creator.simservice1.Repository" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.bug.creator.simclient.Service.AESService">
+    <configuration name="AESService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bug.creator.simservice1.Service.AESService" />
+      <module name="simService1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bug.creator.simservice1.Service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomGatewayFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bug.creator.gatewayservice.Filter.CustomGatewayFilter" />
+      <module name="gateway-service.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bug.creator.gatewayservice.Filter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bug.creator.simclient.Service.AESService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bug.creator.simclient.Service.AESService" />
+      <module name="simClient.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bug.creator.simclient.Service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gateway-service [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/gateway-service" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GatewayServiceApplication | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/GatewayServiceApplication.http" index="4" requestIdentifier="#4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" activateToolWindowBeforeRun="false" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
+      <module name="eureka.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="bug.creator.eureka.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="bug.creator.gatewayservice.GatewayServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="simClient.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="bug.creator.simclient.SimClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimService1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="simService1.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="bug.creator.simservice1.SimService1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimService2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="simService2.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="bug.creator.simservice2.SimService2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="SPRING_BOOT_MAIN_CLASS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.bug.creator.simclient.Service.AESService" />
+      <item itemvalue="Application.AESService" />
+      <item itemvalue="Application.CustomGatewayFilter" />
+      <item itemvalue="Gradle.gateway-service [bootRun]" />
+      <item itemvalue="HTTP Request.GatewayServiceApplication | #4" />
+      <item itemvalue="Spring Boot.SimClientApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.GatewayServiceApplication" />
+      <item itemvalue="Spring Boot.SimService1Application" />
+      <item itemvalue="Spring Boot.SimService2Application" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.bug.creator.simclient.Service.AESService" />
+        <item itemvalue="Application.AESService" />
+        <item itemvalue="Application.CustomGatewayFilter" />
+        <item itemvalue="HTTP Request.GatewayServiceApplication | #4" />
+        <item itemvalue="Gradle.gateway-service [bootRun]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1a788615-200f-434a-bda4-c02c7d03a842" name="Changes" comment="" />
+      <created>1723819180932</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723819180932</updated>
+      <workItem from="1723819181935" duration="1140000" />
+      <workItem from="1723820341246" duration="209000" />
+      <workItem from="1723820559507" duration="2744000" />
+      <workItem from="1723869674284" duration="962000" />
+      <workItem from="1723910041333" duration="124000" />
+      <workItem from="1723910679147" duration="16889000" />
+      <workItem from="1723960375120" duration="9901000" />
+      <workItem from="1723972461805" duration="19459000" />
+    </task>
+    <task id="LOCAL-00001" summary="commit initial">
+      <option name="closed" value="true" />
+      <created>1723928645701</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723928645701</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit second">
+      <option name="closed" value="true" />
+      <created>1723991691889</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723991691889</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit initial" />
+    <MESSAGE value="commit second" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit second" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

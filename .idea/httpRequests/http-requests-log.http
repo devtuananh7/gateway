@@ -1,0 +1,70 @@
+GET http://127.0.0.1:8080/actuator/prometheus
+Accept: text/plain;version=0.0.4;charset=utf-8
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.0.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-08-18T000415.200.txt
+
+###
+
+GET http://127.0.0.1:8080/actuator/prometheus
+Accept: text/plain;version=0.0.4;charset=utf-8
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.0.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-08-18T000132.200.txt
+
+###
+
+GET http://127.0.0.1:8080/actuator/prometheus
+Accept: text/plain;version=0.0.4;charset=utf-8
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.0.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-08-17T235941.200.txt
+
+###
+
+GET http://127.0.0.1:8080/actuator/prometheus
+Accept: text/plain;version=0.0.4;charset=utf-8
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.0.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-08-17T235603.200.txt
+
+###
+
+GET http://127.0.0.1:8080/actuator/prometheus
+Accept: text/plain;version=0.0.4;charset=utf-8
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.0.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-08-17T235522.200.txt
+
+###
+
+GET http://127.0.0.1:8080/actuator/health
+Accept: application/vnd.spring-boot.actuator.v3+json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.0.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-08-17T233414.200.json
+
+###
+
+GET http://127.0.0.1:8080/actuator
+Accept: application/vnd.spring-boot.actuator.v3+json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.0.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-08-17T232238.200.json
+
+###
+
