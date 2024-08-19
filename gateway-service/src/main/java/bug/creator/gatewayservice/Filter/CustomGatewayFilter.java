@@ -78,22 +78,7 @@ public class CustomGatewayFilter implements GlobalFilter {
                     if (request.getURI().toString().contains("register")) {
                         log.info("Register request");
                         // Sửa đổi và tái sử dụng request body
-                        ServerHttpRequestDecorator decoratedRequest = new ServerHttpRequestDecorator(request) {
-                            @Override
-                            public Flux<DataBuffer> getBody() {
-                                DataBufferFactory bufferFactory = new DefaultDataBufferFactory();
-                                DataBuffer buffer = bufferFactory.wrap(decryptedBody.getBytes(StandardCharsets.UTF_8));
-                                return Flux.just(buffer);
-                            }
-                        };
-                        ServerHttpResponseDecorator decoratedResponse =
-                                getDecoratedResponse(response, new DefaultDataBufferFactory(), AES_SECRET);
-
-                        return chain.filter(exchange.mutate()
-                                .request(decoratedRequest)
-                                .response(decoratedResponse)
-                                .build()
-                        );
+                        return returnFilterChain(exchange, chain, request, response, AES_SECRET, decryptedBody);
                     } else {
                         JsonObject jsonObject = gson.fromJson(decryptedBody, JsonObject.class);
                         String clientId;
@@ -109,7 +94,7 @@ public class CustomGatewayFilter implements GlobalFilter {
                             return Mono.error(new RuntimeException("Client ID is required"));
                         } else {
                             aesSecretKey = serverSavedRepository.findByClientId(clientId).getAesSecretKey();
-                            log.info("AES Secret Key: {}", aesSecretKey);
+                            log.info("AES Secret Key from database: {}", aesSecretKey);
                             if (Strings.isBlank(aesSecretKey)) {
                                 return Mono.error(new RuntimeException("AES Secret Key is not found"));
                             }
@@ -118,28 +103,31 @@ public class CustomGatewayFilter implements GlobalFilter {
                             log.info("Decrypted Data: {}", tempDecryptedBody);
 
                             // Sửa đổi và tái sử dụng request body
-                            ServerHttpRequestDecorator decoratedRequest = new ServerHttpRequestDecorator(request) {
-                                @Override
-                                public Flux<DataBuffer> getBody() {
-                                    DataBufferFactory bufferFactory = new DefaultDataBufferFactory();
-                                    DataBuffer buffer = bufferFactory.wrap(tempDecryptedBody.getBytes(StandardCharsets.UTF_8));
-                                    return Flux.just(buffer);
-                                }
-                            };
-                            ServerHttpResponseDecorator decoratedResponse = getDecoratedResponse(response,
-                                    new DefaultDataBufferFactory(),
-                                    aesSecretKey);
-
-                            return chain.filter(exchange.mutate()
-                                    .request(decoratedRequest)
-                                    .response(decoratedResponse)
-                                    .build()
-                            );
+                            return returnFilterChain(exchange, chain, request, response, aesSecretKey, tempDecryptedBody);
                         }
-
 
                     }
                 });
+    }
+
+    private Mono<? extends Void> returnFilterChain(ServerWebExchange exchange, GatewayFilterChain chain, ServerHttpRequest request, ServerHttpResponse response, String aesSecretKey, String tempDecryptedBody) {
+        ServerHttpRequestDecorator decoratedRequest = new ServerHttpRequestDecorator(request) {
+            @Override
+            public Flux<DataBuffer> getBody() {
+                DataBufferFactory bufferFactory = new DefaultDataBufferFactory();
+                DataBuffer buffer = bufferFactory.wrap(tempDecryptedBody.getBytes(StandardCharsets.UTF_8));
+                return Flux.just(buffer);
+            }
+        };
+        ServerHttpResponseDecorator decoratedResponse = getDecoratedResponse(response,
+                new DefaultDataBufferFactory(),
+                aesSecretKey);
+
+        return chain.filter(exchange.mutate()
+                .request(decoratedRequest)
+                .response(decoratedResponse)
+                .build()
+        );
     }
 
 
@@ -160,7 +148,7 @@ public class CustomGatewayFilter implements GlobalFilter {
                         String responseBody = new String(content, StandardCharsets.UTF_8);
 
                         log.info("Original Response Body: {}", responseBody);
-                        log.info("AES Secret Key: {}", aesSecretKey);
+                        log.info("Decorated RESPONSE - AES Secret Key: {}", aesSecretKey);
 
                         String encryptedBody = AESService.encrypt(responseBody, aesSecretKey);
 

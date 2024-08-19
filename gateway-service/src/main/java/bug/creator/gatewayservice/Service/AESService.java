@@ -13,13 +13,14 @@ import java.util.Base64;
 public class AESService {
 
     public static String keyGen(int keySize) {
+        log.info("AES SERVICE - Generating AES key");
         String keyStr = null;
         try {
             KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
             keyGenerator.init(keySize);
             SecretKey key = keyGenerator.generateKey();
             keyStr = Base64.getEncoder().encodeToString(key.getEncoded());
-            log.info("AES key generated successfully");
+            log.info("AES SERVICE - AES key generated successfully");
         } catch (Exception e) {
             log.error("Error while generating AES key", e);
         }
@@ -27,6 +28,7 @@ public class AESService {
     }
 
     public static String encrypt(String data, String secretKeyStr) {
+        log.info("AES SERVICE - Encrypting data: {}", data);
         try {
             byte[] decodedKey = Base64.getDecoder().decode(secretKeyStr);
             SecretKey secretKey = new SecretKeySpec(decodedKey, 0, decodedKey.length, "AES");
@@ -37,7 +39,7 @@ public class AESService {
 
             String encryptedDataStr = Base64.getEncoder().encodeToString(encryptedData);
 
-            log.info("Encrypted data: {}", encryptedDataStr);
+            log.info("AES SERVICE - Encrypted data: {}", encryptedDataStr);
             return encryptedDataStr;
         } catch (Exception e) {
             log.error("Error while encrypting data", e);
@@ -46,6 +48,7 @@ public class AESService {
     }
 
     public static String decrypt(String data, String secretKeyStr) {
+        log.info("AES SERVICE - Decrypting data: {}", data);
         try {
             byte[] decodedKey = Base64.getDecoder().decode(secretKeyStr);
             SecretKey secretKey = new SecretKeySpec(decodedKey, 0, decodedKey.length, "AES");
@@ -57,7 +60,7 @@ public class AESService {
             byte[] decryptedData = cipher.doFinal(encryptedData);
 
             String decryptedDataStr = new String(decryptedData, "UTF-8");
-            log.info("Decrypted data: {}", decryptedDataStr);
+            log.info("AES SERVICE - Decrypted data: {}", decryptedDataStr);
             return decryptedDataStr;
         } catch (Exception e) {
             log.error("Error while decrypting data", e);

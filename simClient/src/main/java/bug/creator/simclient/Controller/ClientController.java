@@ -1,5 +1,6 @@
 package bug.creator.simclient.Controller;
 
+import bug.creator.simclient.DTO.CalResponse;
 import bug.creator.simclient.DTO.ClientRequest;
 import bug.creator.simclient.DTO.ClientRequestSim;
 import bug.creator.simclient.DTO.ClientResponse;
@@ -91,9 +92,10 @@ public class ClientController {
     }
 
     @PostMapping("/calculate")
-    public String getCalData(@RequestBody ClientRequestSim data) {
+    public CalResponse getCalData(@RequestBody ClientRequestSim data) {
         log.info("Sum request to server");
         log.info("Data: {}", gson.toJson(data));
+        CalResponse calResponse = new CalResponse();
         ClientSaved clientSaved = clientSavedRepository.findByKeyId(data.getClientId()).orElse(null);
         if (clientSaved == null) {
             log.error("Client key not found");
@@ -117,9 +119,9 @@ public class ClientController {
                     .POST(HttpRequest.BodyPublishers.ofString("{\"data\":\"" + encryptedDataStr + "\"}"))
                     .build();
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-//            String bodyStr = response.body();
-//
-//            log.info("Response body from cal server: {}", response.body());
+            String bodyStr = response.body();
+
+            log.info("Response body from cal server: {}", bodyStr);
 
             Optional<ClientSaved> temp = clientSavedRepository.findByKeyId(data.getClientId());
             if (temp.isEmpty()) {
@@ -130,8 +132,7 @@ public class ClientController {
             String aesSecretKey = temp.get().getAesSecretKey();
             log.info("AES Secret Key: {}", aesSecretKey);
 
-            ModelMapper modelMapper = new ModelMapper();
-            ClientResponse clientResponse = modelMapper.map(response.body(), ClientResponse.class);
+            ClientResponse clientResponse = gson.fromJson(bodyStr, ClientResponse.class);
             log.info("Response data from cal server: {}", clientResponse.getData());
 
             String dataStr = clientResponse.getData();
@@ -139,10 +140,11 @@ public class ClientController {
 
             log.info("Response DECRYPTED from cal server: {}", decryptedDataRp);
 
+            calResponse = gson.fromJson(decryptedDataRp, CalResponse.class);
         } catch (Exception e) {
             log.info("Error while sending registration request to server", e);
         }
-        return null;
+        return calResponse;
     }
 
 

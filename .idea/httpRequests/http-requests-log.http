@@ -1,3 +1,33 @@
+GET http://localhost:8080/actuator/prometheus
+Accept: text/plain;version=0.0.4;charset=utf-8
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.0.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-08-19T160120.200.txt
+
+###
+
+GET http://localhost:8080/actuator/prometheus
+Accept: text/plain;version=0.0.4;charset=utf-8
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.0.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-08-19T145321.200.txt
+
+###
+
+GET http://localhost:8080/actuator/prometheus
+Accept: text/plain;version=0.0.4;charset=utf-8
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.0.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-08-19T141200.200.txt
+
+###
+
 GET http://127.0.0.1:8080/actuator/prometheus
 Accept: text/plain;version=0.0.4;charset=utf-8
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.0.1
